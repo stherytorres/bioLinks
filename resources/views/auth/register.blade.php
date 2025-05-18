@@ -1,4 +1,5 @@
 <div>
+    {{ auth()->id()}}
     <h1>Register</h1>
 
     @if ($message = session()->get('message'))
@@ -41,7 +42,7 @@
             @enderror
         </div>
         <br>
-        <button type="submit">Registrar</button>
+        <button>Registrar</button>
 
     </form>
 </div>
